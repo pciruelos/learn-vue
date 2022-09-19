@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <Primer/>
+    <ServerList />
+    <ServerDetils />
+
   </div>
 </template>
 
 <script>
-import Primer from './components/Primer.vue'
+
+import ServerList from './components/server/ServersList.vue'
+import ServerDetils from './components/server/ServerDetails.vue'
 
 export default {
   name: 'App',
   components: {
-    Primer
+    ServerList,
+    ServerDetils 
     
   }
 }
